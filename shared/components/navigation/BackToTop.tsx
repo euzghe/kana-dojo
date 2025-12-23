@@ -67,7 +67,7 @@ export default function BackToTop() {
         'fixed z-[60] right-2 lg:right-3 top-1/2 -translate-y-1/2',
         'max-md:border-2 border-[var(--border-color)]',
         'inline-flex items-center justify-center rounded-full',
-        'p-2 md:p-3 shadow-lg transition-all duration-200',
+        'p-2 md:p-3 transition-all duration-200',
         'bg-[var(--card-color)] text-[var(--main-color)]',
         'hover:bg-[var(--main-color)] hover:text-[var(--background-color)]',
         'hover:cursor-pointer'

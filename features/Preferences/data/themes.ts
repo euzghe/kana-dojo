@@ -86,7 +86,7 @@ function formatOklch(L: number, C: number, H: number, A: number): string {
 export function generateCardColor(
   backgroundColor: string,
   lightnessBoost = 0.1,
-  chromaMultiplier = 1.65
+  chromaMultiplier = 1.7
 ): string {
   const parsed = parseOklch(backgroundColor);
   if (!parsed) {

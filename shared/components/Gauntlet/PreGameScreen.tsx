@@ -116,7 +116,7 @@ export default function PreGameScreen({
           </div>
 
           {/* Selected Sets */}
-          <div className='rounded-lg bg-[var(--card-color)] p-4'>
+          <div className='rounded-xl bg-[var(--card-color)] p-4'>
             <div className='flex flex-col gap-2'>
               <span className='text-sm font-medium text-[var(--main-color)]'>
                 Selected:
@@ -256,7 +256,7 @@ export default function PreGameScreen({
                     }
                   }}
                   className={clsx(
-                    'w-full rounded-xl p-4 text-left',
+                    'w-full rounded-2xl p-4 text-left',
                     'flex items-center gap-4 border-2 bg-[var(--card-color)]',
                     isDisabled && 'cursor-not-allowed opacity-50',
                     !isDisabled && 'hover:cursor-pointer',
@@ -313,8 +313,8 @@ export default function PreGameScreen({
           </div>
 
           {/* Repetitions per character */}
-          <div className='space-y-3 rounded-lg bg-[var(--card-color)] p-4'>
-            <p className='text-sm font-medium text-[var(--secondary-color)]'>
+          <div className='space-y-3 rounded-xl bg-[var(--card-color)] p-4'>
+            <p className='text-sm font-medium text-[var(--main-color)]'>
               Repetitions per character:
             </p>
             <div className='flex flex-wrap justify-center gap-2'>

@@ -14,6 +14,7 @@ import GameModes from '@/shared/components/Menu/GameModes';
 import GauntletKana from '@/features/Kana/components/Gauntlet';
 import GauntletKanji from '@/features/Kanji/components/Gauntlet';
 import GauntletVocab from '@/features/Vocabulary/components/Gauntlet';
+import { cn } from '@/shared/lib/utils';
 
 interface ITopBarProps {
   currentDojo: string;
@@ -219,7 +220,7 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                     setShowGameModesModal(true);
                   }}
                 >
-                  <Zap size={20} />
+                  <Zap size={20} className={cn('fill-current motion-safe:animate-none ')} />
                   <span className='whitespace-nowrap'>Blitz</span>
                 </button>
               )}
@@ -240,7 +241,7 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                     setShowGauntletModal(true);
                   }}
                 >
-                  <Swords size={20} />
+                  <Swords size={20} className={cn('fill-current')} />
                   <span className='whitespace-nowrap'>Gauntlet</span>
                 </button>
               )}
@@ -252,7 +253,7 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                 className={clsx(
                   'flex h-12 max-w-sm flex-1 flex-row items-center justify-center gap-2 px-2 sm:px-6',
                   'rounded-2xl transition-colors duration-200',
-                  'border-b-8 font-medium shadow-sm',
+                  'border-b-8',
                   'hover:cursor-pointer',
                   isFilled
                     ? 'border-[var(--main-color-accent)] bg-[var(--main-color)] text-[var(--background-color)]'
@@ -265,8 +266,8 @@ const TrainingActionBar: React.FC<ITopBarProps> = ({
                   setShowGameModesModal(true);
                 }}
               >
-                <span className='whitespace-nowrap'>Classic</span>
                 <Play className={clsx(isFilled && 'fill-current')} size={20} />
+                <span className='whitespace-nowrap'>Classic</span>
               </button>
             </div>
           </motion.div>
