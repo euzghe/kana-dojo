@@ -550,7 +550,7 @@ const PickGame = ({ isHidden }: PickGameProps) => {
         isHidden ? 'hidden' : ''
       )}
     >
-      <GameIntel gameMode={gameMode} feedback={feedback} />
+      <GameIntel gameMode={gameMode} />
       <div className='flex flex-row items-center gap-1'>
         <p className='text-8xl font-medium sm:text-9xl'>{displayChar}</p>
       </div>
